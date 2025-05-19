@@ -86,19 +86,21 @@ section {
 }
 
 .home-img {
-    border-right: solid 0.6rem;
-    border-bottom: solid 0.6rem;
+    border-right: solid 0.0rem;
+    border-bottom: solid 0.0rem;
     border-image: linear-gradient (135deg, transparent 50%, var(--main-color)) 1;
 }
 
 .about-img {
-    border-left: solid 0.6rem;
-    border-bottom: solid 0.6rem;
+    border-left: solid 0.0rem;
+    border-bottom: solid 0.0rem;
     border-image: linear-gradient (225deg, transparent 50%, var(--main-color)) 1;
 }
 
 .home-img img, .about-img img {
-    width: 100%;
+    width: 78%;
+    height: 100%;
+
 }
 
 .about {
@@ -220,4 +222,32 @@ section {
     padding: 0.4rem;
     transform: translateY(30rem);
     transition: 0.5s ease;
+
+}
+
+.portfolio-box:hover .portifolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+    font-size: 1.8rem;
+}
+
+.portfolio-layer p {
+    margin: 0.2rem 0 0.5rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i{
+    font-size: 1.2rem;
+    color: var(--bg-color-02);
 }
